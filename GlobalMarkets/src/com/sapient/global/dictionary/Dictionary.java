@@ -45,11 +45,11 @@ public class Dictionary {
 		Dictionary dictionary = new Dictionary();
 		dictionary.set("java", "object oriented");
 		dictionary.set("linux", "rulez");
-		Writer writer = new Writer(dictionary, "Mr. Writer");
+		/*Writer writer = new Writer(dictionary, "Mr. Writer");
 		Reader reader1k = new Reader(dictionary, "Mr. Reader1");
 		Reader reader2 = new Reader(dictionary, "Mr. Reader2");
 		Reader reader3 = new Reader(dictionary, "Mr. Reader3");
 		Reader reader4 = new Reader(dictionary, "Mr. Reader4");
-		Reader reader5 = new Reader(dictionary, "Mr. Reader5");
+		Reader reader5 = new Reader(dictionary, "Mr. Reader5");*/
 	}
 }
