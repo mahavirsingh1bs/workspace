@@ -20,9 +20,15 @@ public class ConcreteMain {
 		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(f));
 		out.writeObject(cp);
 
-		ObjectInputStream in = new ObjectInputStream(new FileInputStream(f));
-		cp = (ConcretePage) in.readObject();
+		ObjectInputStream in1 = new ObjectInputStream(new FileInputStream(f));
+		ConcretePage cp1 = (ConcretePage) in1.readObject();
+		in1.close();
 		System.out.println("After deserialize user is: " + cp.getUser()
 				+ " and author is:" + cp.getAuthor());
+		
+		ObjectInputStream in2 = new ObjectInputStream(new FileInputStream(f));
+		ConcretePage cp2 = (ConcretePage) in2.readObject();
+		System.out.println(cp == cp1);
+		System.out.println(cp1 == cp2);
 	}
 }

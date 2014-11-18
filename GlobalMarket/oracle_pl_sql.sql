@@ -28,6 +28,7 @@ BEGIN
 		SET author = REPLACE(author, 'Steven', 'STEPHEN')
 		WHERE author LIKE '%Jonathan, and Steven%';
 END;
+/
 
 CREATE TABLE accounts (id INTEGER, name VARCHAR2 (100));
 
